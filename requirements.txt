@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+
+langchain
+langgraph
+
+snowflake-connector-python
+
+pytest
+pytest-asyncio
+httpx
