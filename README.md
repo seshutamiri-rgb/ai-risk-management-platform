@@ -24,11 +24,22 @@ RiskLens brings these capabilities together to help a Project Manager:
 The AI assists the Project Manager; it does not replace the Project Manager's
 final decision.
 
----
+## ✨ Key Features
+
+- Project risk retrieval and analysis
+- Probability × Impact risk scoring
+- Configurable risk severity classification
+- Project knowledge retrieval
+- AI-generated management-oriented explanations
+- LangGraph-based workflow orchestration
+- MCP-based controlled tool access
+- Snowflake integration for structured project/risk data
+- Human-in-the-loop decision support
+- Input and structured-output validation
+- Error handling and secure configuration
 
 ## 🏗️ Architecture
 
-```text
                     ┌──────────────────────┐
                     │   React + TypeScript │
                     │      Frontend        │
@@ -70,6 +81,7 @@ final decision.
                     │   Project Manager    │
                     │   Final Decision     │
                     └──────────────────────┘
+
 🔄 AI Workflow
 The RiskLens workflow follows a controlled multi-step process:
 
@@ -143,6 +155,46 @@ Project Manager reviews
 Project Manager decides
 The final project risk decision remains with the human Project Manager.
 
+📊 Example Risk Analysis
+    Example request: Analyze the risks for project PRJ-001 and explain the highest-priority risks.
+
+User Request
+     ↓
+Project Risk Retrieval
+     ↓
+Risk Validation
+     ↓
+Probability × Impact
+     ↓
+Severity Classification
+     ↓
+Project Knowledge Retrieval
+     ↓
+LLM Management Explanation
+     ↓
+Project Manager Review
+
+Example deterministic calculation:
+Probability = 4
+Impact = 5
+
+Risk Score = 4 × 5 = 20
+
+Severity = High
+
+The LLM then provides a management-oriented explanation based on the
+retrieved project context.
+The Project Manager makes the final decision.
+
+ 🔗 Example API
+
+Risk analysis endpoint:
+GET /graph/projects/{project_id}/risk-analysis
+Example: GET /graph/projects/PRJ-001/risk-analysis
+
+The endpoint invokes the AI risk-analysis workflow and returns the
+structured risk analysis and management-oriented explanation.
+
 🛡️ Validation & Security
 The application includes controls designed to improve reliability and protect
 sensitive configuration:
@@ -206,12 +258,35 @@ ai-risk-management-platform/
 ├── README.md
 └── requirements.txt
 
+ 🧪 Testing & Validation
+    The project includes automated testing covering key application and AI workflow components.
+  
+  Validation areas include:
+- API input validation
+- Risk calculation validation
+- Structured output validation
+- Workflow/error handling
+- MCP tool access
+- Data retrieval
+- AI response handling
+- Security and configuration checks
+
 🚀 Current Status
 Development Status: Local frontend and backend integration completed and
 tested.
 The project is currently being prepared for further deployment and
 production-oriented improvements.
 Cloud deployment is not currently claimed as part of this project.
+
+🔮 Future Enhancements
+
+Planned enhancements include:
+
+- Cloud deployment
+- Production-oriented observability
+- Expanded project knowledge sources
+- Additional AI-assisted project management capabilities
+- Enhanced UI dashboards and analytics
 
 🎓 Key Learning Areas
 This project demonstrates practical experience with:
