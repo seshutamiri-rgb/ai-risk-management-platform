@@ -278,6 +278,43 @@ The project is currently being prepared for further deployment and
 production-oriented improvements.
 Cloud deployment is not currently claimed as part of this project.
 
+## 🖥️ Application Screenshots
+
+### RiskLens Overview
+
+The RiskLens overview provides a project-level view of project health,
+open risks, severity distribution, and top-priority risks.
+
+![RiskLens Overview](docs/screenshots/risklens-overview.png)
+
+### Projects
+
+The Projects view provides project-level information and risk summaries
+retrieved from the configured data source.
+
+![RiskLens Projects](docs/screenshots/risklens-projects.png)
+
+### Risk Register
+
+The Risk Register displays project risks with probability, impact,
+deterministic risk score, severity, owner, and status.
+
+![RiskLens Risk Register](docs/screenshots/risklens-risk-register.png)
+
+### AI Risk Analysis
+
+The AI Risk Analysis view provides management-oriented analysis including
+executive summary, critical risks, evidence gaps, recommended actions,
+and questions for the Project Manager.
+
+#### AI Risk Analysis — Executive View
+
+![AI Risk Analysis 1](docs/screenshots/risklens-ai-risk-analysis-1.png)
+
+#### AI Risk Analysis — Management Actions
+
+![AI Risk Analysis 2](docs/screenshots/risklens-ai-risk-analysis-2.png)
+
 🔮 Future Enhancements
 
 Planned enhancements include:
