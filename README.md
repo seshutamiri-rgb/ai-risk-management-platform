@@ -221,7 +221,7 @@ Backend
 Data
 - Snowflake
 - SQL
-AI / Agentic AI
+- Agentic AI
 - LLM
 - LangGraph
 - MCP
