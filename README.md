@@ -258,6 +258,15 @@ ai-risk-management-platform/
 ├── README.md
 └── requirements.txt
 
+### Related Repository — React Frontend
+
+The RiskLens user interface is maintained in a separate repository built with React and TypeScript.
+
+- **Frontend Repository:** [ai-risk-management-frontend](https://github.com/seshutamiri-rgb/ai-risk-management-frontend)
+- **Backend Repository:** [ai-risk-management-platform](https://github.com/seshutamiri-rgb/ai-risk-management-platform)
+
+The frontend communicates with the Python/FastAPI backend to support project risk management and AI-assisted risk analysis.
+
  🧪 Testing & Validation
     The project includes automated testing covering key application and AI workflow components.
   
